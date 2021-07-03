@@ -8,29 +8,31 @@
   <link rel="stylesheet" href='./public/stylesheets/style.css'>
 </head>
 <body>
-  <div>
-    <header>
-        <h1>
-            <a href="/" class="a-tag" id='tech'>Tech Blog</a>
-        </h1>
-
-        <nav>
-            <ul>
-                <li>
-                    <!-- <a href="/dashboard" class="a-tag nav-button">Dashboard</a> -->
-                </li>
-                <li>
-                    <!-- <a href="/" class="a-tag nav-button" id='logout'>Logout</a> -->
-                </li>
-                <li>
-                    <a href="/login" class="a-tag nav-button">Login</a>
-                </li>
-                <li>
-                    <a href="/" class="a-tag nav-button">Home</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-</div>
+        <article>
+            <button href="/dashboard" id='back-btn'> &larr; Back to dashboard</button>
+            <h2 class='edit-title'>Edit Post</h2>
+            <form class="edit-post-form">
+            <div>
+                <input name="post-title" type="text" value="title" class='input' id='edit-input' />
+            </div>
+            <div class='edit-meta'>
+                Created by you on 7/3/2021 | <a href="/post/{{post.id}}">4 comments</a>
+            </div>
+            <button type="submit" class='save-post-btn post-btn'>Save post</button>
+            <button type="button" class="delete-post-btn post-btn">Delete post</button>
+            </form>
+        </article>
+        
+        <form class="comment-form">
+        <div>
+            <textarea name="comment-body" class='input' id='content'></textarea>
+        </div>
+            <button type="submit" id='add-comment-btn'>Add Comment</button>
+        </form>
+        <div class="comments">
+             7/3/2021
+            some comment
+        </div>
+        
 </body>
 </html>

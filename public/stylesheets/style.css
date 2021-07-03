@@ -10,6 +10,7 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 1%;
     padding: 1% 2%;
 }
 
@@ -39,21 +40,10 @@ header nav ul {
 }
 
 .title {
-    margin: auto; 
+    margin: auto;
 }
 
 .form {
-    margin: 3% auto;
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    padding: 1.4%;
-    background-color: gray;
-    border: dotted;
-    border-width: .2vw;
-}
-
-.create-post {
     margin: 3% auto;
     display: flex;
     flex-direction: column;
@@ -98,8 +88,161 @@ label {
 .button:hover {
     box-shadow: 0 0 .2vw .2vw #a0c7e4;
     transform: scale(1.03);
+    cursor: pointer;
+}
+
+#signupSentence {
+    margin: 15px auto 0 auto;
+    font-size: 1.2vw;
+}
+
+.create-post {
+    margin: 3% auto;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 1.4%;
+    background-color: gray;
+    border: dotted;
+    border-width: .2vw;
 }
 
 #content {
     resize: none;
+}
+
+#your-post-title {
+    font-size: 2vw;
+    text-align: center;
+}
+
+.post {
+    margin: 3% auto;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 1.4%;
+    background-color: #a0c7e4;
+    border: solid;
+    border-color: black;
+    border-width: .2vw;
+}
+
+.post-title {
+    font-size: 2vw;
+}
+
+.meta {
+    font-size: 1.2vw;
+}
+
+.comment-number {
+    color: black;
+
+}
+
+.edit-link {
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 1% 2%;
+    margin: 0 0 2% 45%;
+}
+
+.edit-link:hover {
+    box-shadow: 0 0 .2vw .2vw #a0c7e4;
+    transform: scale(1.03);
+}
+
+#back-btn {
+    font-size: 1vw;
+    margin-top: 2%;
+    padding: 1% 2%;
+    text-decoration: none;
+    background-color: #a0c7e4;
+    border-color: gray;
+}
+
+.edit-title {
+    font-size: 1.8vw;
+    text-align: center;
+}
+
+.edit-post-form {
+    margin: 3% auto;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 1.4%;
+    background-color: #a0c7e4;
+    border: dotted;
+    border-width: .2vw;
+}
+
+#edit-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 .2vw gray;
+}
+
+.edit-meta {
+    font-size: 1.2vw;
+    margin-bottom: 2%;
+}
+
+.save-post-btn {
+    margin-bottom: 1%;
+}
+
+.post-btn {
+    font-size: 1vw;
+    background-color: gray;
+    color: white;
+    padding: 1.5% 0;
+    cursor: pointer
+}
+
+.post-btn:hover {
+    transform: scale(1.03);
+}
+
+.comment-form {
+    margin: 3% auto;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 1.4%;
+    background-color: #a0c7e4;
+    border: dotted;
+    border-width: .2vw;
+}
+
+#add-comment-btn {
+    font-size: 1vw;
+    background-color: gray;
+    color: white;
+    padding: 1% 2%;
+    cursor: pointer;
+}
+
+#add-comment-btn:hover {
+    transform: scale(1.03);
+}
+
+.comments {
+    font-size: 1.2vw;
+    text-align: center
+}
+
+.comment {
+    border: solid;
+    border-width: .2vw;
+    background-color: #a0c7e4;
+    margin: 1% auto;
+    width: 25%;
+}
+
+.comment-text {
+    color: white;
 }
